@@ -20,7 +20,8 @@ app.controller("GameController", ['$scope', function($scope){
     $scope.guesses = 6;
     $scope.displayWord = '';
     
-    $scope.selectedWord = selectRandomWord();
+    selectedWord = selectRandomWord();
+    console.log(selectedWord);
     var tempDisplayWord = '';
     for (var i = 0; i < selectedWord.length; i++){
       tempDisplayWord += '*';
