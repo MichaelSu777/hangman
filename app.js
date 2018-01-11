@@ -25,6 +25,7 @@ app.controller("GameController", ['$scope', function($scope){
     for (var i = 0; i < selectedWord.length; i++){
       tempDisplayWord += '*';
     }
+    console.log(tempDisplayWord);
     $scope.displayWord = tempDisplayWord;
   }
   newGame();
