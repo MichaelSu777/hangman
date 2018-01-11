@@ -14,11 +14,8 @@
 </p>
     <div >
       <div class="guess">
-	      <div style="display:inline;width:200px;height:200px;">
-		      <canvas width="200" height="200"></canvas>
-		      <input class="dial ng-pristine ng-untouched ng-valid" data-width="200" data-min="0" data-displayprevious="false" value="{{guesses}}" data-fgcolor="#00BCD4" data-skin="tron" data-thickness=".4" ng-model="guesses" style="width: 104px; height: 66px; position: absolute; vertical-align: middle; margin-top: 66px; margin-left: -152px; border: 0px; background: none; font-style: normal; font-variant: normal; font-weight: bold; font-stretch: normal; font-size: 50px; line-height: normal; font-family: Arial; text-align: center; color: rgb(0, 188, 212); padding: 0px; -webkit-appearance: none;">
+	      <input type="text" class="dial">
 	      </div>
-        Guesses Left :: {{guesses}}
       </div>
       
        <div class="correctLetter">
@@ -37,5 +34,14 @@
         </div>
       </div>
     </div>
+	<script>
+    $(function() {
+        $(".dial").knob({
+        	'min':0,
+    		'max':6
+        }).trigger('change');
+
+    });
+</script>
   </body>
 </html>
