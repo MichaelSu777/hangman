@@ -28,6 +28,11 @@ app.controller("GameController", ['$scope', function($scope){
     console.log(tempDisplayWord);
     $scope.displayWord = tempDisplayWord;
   }
+  $scope.letterChosen = function(){
+    
+    
+    
+  }
   newGame();
   
 }])
