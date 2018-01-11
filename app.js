@@ -1,4 +1,15 @@
 var app = angular.module("HangmanApp", []);
 app.controller("GameController", ['$scope', function($scope){
-$scope.demo = "somestring"
+  var words = ["rat", "cat", "bat", "mat"];
+  $scope.incorrectLettersChosen=[];
+  $scope.correctLettersChosen=[];
+  $scope.guesses = 6;
+  $scope.displayWord = '';
+  $scope.input = {
+    letter : ''
+  }
+  
+  
+  
+  
 }])
