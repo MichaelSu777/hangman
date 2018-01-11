@@ -55,6 +55,7 @@ app.controller("GameController", ['$scope', function($scope){
     } else {
       $scope.incorrectLettersChosen.push($scope.input.letter.toLowerCase()); 
     }
+    $scope.input.letter = "";
     
   }
   newGame();
