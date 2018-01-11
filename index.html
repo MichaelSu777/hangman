@@ -16,11 +16,12 @@
       <div>
         Guesses Left :: {{guesses}}
       </div>
-      <div class="incorrectLetter">
-        Your Incorrect Guesses :: <span ng-repeat="letter in incorrectLettersChosen">{{letter}}</span>
-      </div>
+      
        <div class="correctLetter">
         <i class="correct-icon material-icons" style="font-size:60px;color:#009688;">thumb_up</i> <span ng-repeat="letter in correctLettersChosen">{{letter}}</span>
+      </div>
+	    <div class="incorrectLetter">
+        <i class="incorrect-icon material-icons" style="font-size:60px;color:#E91E63;">thumb_down</i><span ng-repeat="letter in incorrectLettersChosen">{{letter}}</span>
       </div>
       <div>You have to guess: {{displayWord}}</div>
       <div>
