@@ -29,7 +29,7 @@ app.controller("GameController", ['$scope', function($scope){
     $scope.displayWord = tempDisplayWord;
   }
   $scope.letterChosen = function(){
-    
+    console.log("Working");
     
     
   }
