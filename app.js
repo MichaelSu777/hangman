@@ -23,5 +23,5 @@ app.controller("GameController", ['$scope', function($scope){
     var selectedWord = selectRandomWord();
     console.log(selectedWord);
   }
-  
+  newGame();
 }])
