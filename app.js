@@ -61,9 +61,15 @@ app.controller("GameController", ['$scope', function($scope){
     if($scope.guesses == 0){
      
       alert("You lost !");
+      $timeout(function(){
+        newGame();
+      }, 500);
     }
     if ($scope.displayWord.indexOf("*") == -1){
      alert("You won ! "); 
+       $timeout(function(){
+        newGame();
+      }, 500);
     }
   }
   
