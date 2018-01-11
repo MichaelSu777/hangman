@@ -28,7 +28,7 @@ app.controller("GameController", ['$scope', function($scope){
     }
     console.log(tempDisplayWord);
     $scope.displayWord = tempDisplayWord;
-  
+  }
   $scope.letterChosen = function(){
     for (var i = 0; i < $scope.correctLettersChosen.length; i++){
      if ($scope.correctLettersChosen[i].toLowerCase() == $scope.input.letter.toLowerCase()){
@@ -66,7 +66,7 @@ app.controller("GameController", ['$scope', function($scope){
      alert("You won ! "); 
     }
   }
-  }
+  
   newGame();
   
 }])
