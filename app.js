@@ -54,10 +54,17 @@ app.controller("GameController", ['$scope', function($scope){
     if (correct){
      $scope.correctLettersChosen.push($scope.input.letter.toLowerCase()); 
     } else {
+      $scope.guesses--;
       $scope.incorrectLettersChosen.push($scope.input.letter.toLowerCase()); 
     }
     $scope.input.letter = "";
-    
+    if($scope.guesses == 0){
+     
+      alert("You lost !");
+    }
+    if ($scope.displayWord.indexof("*") == -1){
+     alert("You won ! "); 
+    }
   }
   }
   newGame();
