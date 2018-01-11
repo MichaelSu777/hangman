@@ -62,7 +62,7 @@ app.controller("GameController", ['$scope', function($scope){
      
       alert("You lost !");
     }
-    if ($scope.displayWord.indexof("*") == -1){
+    if ($scope.displayWord.indexOf("*") == -1){
      alert("You won ! "); 
     }
   }
