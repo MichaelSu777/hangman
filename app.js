@@ -9,7 +9,9 @@ app.controller("GameController", ['$scope', function($scope){
     letter : ''
   }
   
-  
+  var selectRandomWord = function(){
+   var index = Math.round(Math.random() * words.length) 
+  }
   
   
 }])
