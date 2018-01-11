@@ -45,7 +45,7 @@ app.controller("GameController", ['$scope', function($scope){
     var correct = false;
      for (var i = 0; i < selectedWord.length; i++){
       if (selectedWord[i].toLowerCase() == $scope.input.letter.toLowerCase()){
-        $scope.displayWord = $scope.displayWord(0, i) + $scope.input.letter.toLowerCase() + $scope.displayWord.slice(i + 1);
+        $scope.displayWord = $scope.displayWord.slice(0, i) + $scope.input.letter.toLowerCase() + $scope.displayWord.slice(i + 1);
         correct = true;
       
       }
